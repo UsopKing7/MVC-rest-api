@@ -1,0 +1,11 @@
+### para filter la API
+GET http://localhost:3333/moduls
+
+### para filter por Id
+GET http://localhost:3333/moduls?id=10
+
+### para filer por name la API
+GET http://localhost:3333/moduls?name=Google%20Pixel%206%20Pro
+
+### para filter por brand
+GET http://localhost:3333/moduls?brand=apple

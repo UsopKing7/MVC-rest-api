@@ -1,0 +1,18 @@
+### new cell
+POST http://localhost:3333/moduls
+Content-Type: application/json
+
+  {
+    "id": 14,
+    "name": "Samsung A32",
+    "brand": "Android",
+    "category": "Smartphone",
+    "details": {
+      "color": "Black",
+      "capacity": "512 GB",
+      "price": 899.99,
+      "screen": "6.7 inches",
+      "operating_system": "Android 15",
+      "available": true
+    }
+  }
