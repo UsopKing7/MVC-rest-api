@@ -7,7 +7,7 @@ export const routerGet = Router()
 
 routerGet.get('/', (req, res) => {
   console.log('petition resided...  ', req.url)
-  const { id, name, brand } = req.query
+  const { id, name, brand, category } = req.query
   if (id) {
     const idProduct = apiProducts.find(products => products.id === Number(id))
     return res.status(200).json(idProduct)
@@ -17,6 +17,9 @@ routerGet.get('/', (req, res) => {
   } else if (brand) {
     const brandProduct = apiProducts.filter(products => products.brand.toUpperCase() === brand.toUpperCase())
     return res.status(200).json(brandProduct)
+  } else if (category) {
+    const categoryProduct = apiProducts.filter(products => products.category.toUpperCase() === category.toUpperCase())
+    return res.status(200).json(categoryProduct)
   } else {
     return res.status(200).json(apiProducts)
   }
