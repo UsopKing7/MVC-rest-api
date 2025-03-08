@@ -1,5 +1,5 @@
 ### new cell
-POST http://localhost:3333/moduls
+POST http://localhost:3333/db
 Content-Type: application/json
 
 {
