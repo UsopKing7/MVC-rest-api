@@ -1,180 +1,102 @@
 [
   {
-    "id": 1,
     "name": "Google Pixel 6 Pro",
     "brand": "Google",
-    "category": "Smartphone",
-    "details": {
-      "color": "Cloudy White",
-      "capacity": "128 GB",
-      "price": 899.99,
-      "screen": "6.7 inches",
-      "operating_system": "Android 12",
-      "available": true
-    }
+    "category": "Smartphone"
   },
   {
-    "id": 2,
     "name": "Apple iPhone 12 Mini",
     "brand": "Apple",
-    "category": "Smartphone",
-    "details": {
-      "color": "Blue",
-      "capacity": "256 GB",
-      "price": 799.99,
-      "screen": "5.4 inches",
-      "operating_system": "iOS 15",
-      "available": true
-    }
+    "category": "Smartphone"
   },
   {
-    "id": 3,
     "name": "Apple iPhone 12 Pro Max",
     "brand": "Apple",
-    "category": "Smartphone",
-    "details": {
-      "color": "Cloudy White",
-      "capacity": "512 GB",
-      "price": 1199.99,
-      "screen": "6.7 inches",
-      "operating_system": "iOS 15",
-      "available": true
-    }
+    "category": "Smartphone"
   },
   {
-    "id": 4,
     "name": "Apple iPhone 11",
     "brand": "Apple",
-    "category": "Smartphone",
-    "details": {
-      "color": "Purple",
-      "capacity": "64 GB",
-      "price": 389.99,
-      "screen": "6.1 inches",
-      "operating_system": "iOS 14",
-      "available": false
-    }
+    "category": "Smartphone"
   },
   {
-    "id": 5,
     "name": "Samsung Galaxy Z Fold2",
     "brand": "Samsung",
-    "category": "Smartphone",
-    "details": {
-      "color": "Brown",
-      "capacity": "256 GB",
-      "price": 689.99,
-      "screen": "7.6 inches (foldable)",
-      "operating_system": "Android 11",
-      "available": true
-    }
+    "category": "Smartphone"
   },
   {
-    "id": 6,
     "name": "Apple AirPods (3rd generation)",
     "brand": "Apple",
-    "category": "Headphones",
-    "details": {
-      "price": 120.00,
-      "connection": "Bluetooth",
-      "noise_cancellation": false,
-      "available": true
-    }
+    "category": "Headphones"
   },
   {
-    "id": 7,
     "name": "Apple MacBook Pro 16",
     "brand": "Apple",
-    "category": "Laptop",
-    "details": {
-      "year": 2019,
-      "price": 1849.99,
-      "cpu": "Intel Core i9",
-      "storage": "1 TB SSD",
-      "ram": "16 GB",
-      "screen": "16 inches",
-      "operating_system": "macOS",
-      "available": false
-    }
+    "category": "Laptop"
   },
   {
-    "id": 8,
     "name": "Apple Watch Series 8",
     "brand": "Apple",
-    "category": "Smartwatch",
-    "details": {
-      "strap_color": "Elderberry",
-      "case_size": "41 mm",
-      "price": 499.99,
-      "water_resistance": "50m",
-      "connectivity": "Wi-Fi, Bluetooth, LTE",
-      "available": true
-    }
+    "category": "Smartwatch"
   },
   {
-    "id": 9,
     "name": "Beats Studio3 Wireless",
     "brand": "Beats",
-    "category": "Headphones",
-    "details": {
-      "color": "Red",
-      "description": "High-performance wireless noise-canceling headphones",
-      "price": 299.99,
-      "connection": "Bluetooth",
-      "noise_cancellation": true,
-      "available": true
-    }
+    "category": "Headphones"
   },
   {
-    "id": 10,
     "name": "Apple iPad Mini 5th Generation",
     "brand": "Apple",
-    "category": "Tablet",
-    "details": {
-      "capacity": "64 GB",
-      "screen": "7.9 inches",
-      "price": 399.99,
-      "operating_system": "iPadOS",
-      "available": true
-    }
+    "category": "Tablet"
   },
   {
-    "id": 11,
     "name": "Apple iPad Mini 5th Generation",
     "brand": "Apple",
-    "category": "Tablet",
-    "details": {
-      "capacity": "256 GB",
-      "screen": "7.9 inches",
-      "price": 499.99,
-      "operating_system": "iPadOS",
-      "available": true
-    }
+    "category": "Tablet"
   },
   {
-    "id": 12,
     "name": "Apple iPad Air (4th Generation)",
     "brand": "Apple",
-    "category": "Tablet",
-    "details": {
-      "capacity": "64 GB",
-      "price": 419.99,
-      "screen": "10.9 inches",
-      "operating_system": "iPadOS",
-      "available": true
-    }
+    "category": "Tablet"
   },
   {
-    "id": 13,
     "name": "Apple iPad Air (4th Generation)",
     "brand": "Apple",
-    "category": "Tablet",
-    "details": {
-      "capacity": "256 GB",
-      "price": 519.99,
-      "screen": "10.9 inches",
-      "operating_system": "iPadOS",
-      "available": true
-    }
+    "category": "Tablet"
+  },
+  {
+    "name": "Samsung Galaxy S21",
+    "brand": "Samsung",
+    "category": "Smartphone"
+  },
+  {
+    "name": "Sony WH-1000XM4",
+    "brand": "Sony",
+    "category": "Headphones"
+  },
+  {
+    "name": "Dell XPS 13",
+    "brand": "Dell",
+    "category": "Laptop"
+  },
+  {
+    "name": "Huawei Watch GT 3",
+    "brand": "Huawei",
+    "category": "Smartwatch"
+  },
+  {
+    "name": "Xiaomi Mi 11",
+    "brand": "Xiaomi",
+    "category": "Smartphone"
+  },
+  {
+    "name": "Oculus Quest 2",
+    "brand": "Oculus",
+    "category": "VR Headset"
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "brand": "Lenovo",
+    "category": "Laptop"
   }
 ]
