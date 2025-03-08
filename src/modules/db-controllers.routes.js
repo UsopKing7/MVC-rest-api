@@ -5,8 +5,8 @@ import { pool } from './db-pool.routes.js'
 
 export const routerDb = Router()
 
-routerDb.get('/', async(req, res) => {
-  console.log('Consult...  ', req.url)
-  const [data] = await pool.query('SELECT 10 * 10 AS result')
-  return res.status(200).json(data[0])
+routerDb.post('/', async(req, res) => {
+  const { name, brand } = req.body
+  const [data] = await pool.query('INSERT INTO productos (name, brand) VALUES (?, ?)', [name, brand])
+  return res.status(201).json({data})
 })
