@@ -2,7 +2,7 @@
 GET http://localhost:3333/db
 
 ### para filter por Id
-GET http://localhost:3333/db?id=3
+GET http://localhost:3333/db?id=1
 
 ### para filter por name
 GET http://localhost:3333/db?name=samsung%20galaxy%20s23

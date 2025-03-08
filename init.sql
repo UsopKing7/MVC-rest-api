@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS cellPhonesCompany;
+USE cellPhonesCompany;
+
+CREATE TABLE IF NOT EXISTS cellPhones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  brand VARCHAR(255) NOT NULL,
+  category VARCHAR(255) NOT NULL
+);
