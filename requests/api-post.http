@@ -3,7 +3,7 @@ POST http://localhost:3333/db
 Content-Type: application/json
 
 {
-  "name": "Xiaomi 12 Lite",
+  "name": "Redmi Note 12 pro",
   "brand": "xiaomi",
   "category": "smartfone"
 }
