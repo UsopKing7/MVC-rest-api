@@ -1,14 +1,14 @@
-### para filter la API
-GET http://localhost:3333/moduls
+### Para filter db
+GET http://localhost:3333/db
 
 ### para filter por Id
-GET http://localhost:3333/moduls?id=13
+GET http://localhost:3333/db?id=3
 
-### para filer por name la API
-GET http://localhost:3333/moduls?name=Google%20Pixel%206%20Pro
+### para filter por name
+GET http://localhost:3333/db?name=samsung%20galaxy%20s23
 
 ### para filter por brand
-GET http://localhost:3333/moduls?brand=apple
+GET http://localhost:3333/db?brand=samsung
 
 ### para filter por category
-GET http://localhost:3333/moduls?category=tablet
+GET http://localhost:3333/db?category=smartfone
