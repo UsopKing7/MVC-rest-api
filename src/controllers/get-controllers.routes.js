@@ -1,26 +1,34 @@
 #!/usr/bin/env node
 
 import { Router  } from "express"
-import apiProducts from '../../api.json' with { type: 'json'}
-
+import { pool } from '../../src/modules/db-pool.routes.js'
 export const routerGet = Router()
 
-routerGet.get('/', (req, res) => {
-  console.log('petition resided...  ', req.url)
-  const { id, name, brand, category } = req.query
-  if (id) {
-    const idProduct = apiProducts.find(products => products.id === Number(id))
-    return res.status(200).json(idProduct)
-  } else if (name) {
-    const nameProduct = apiProducts.filter(products => products.name.toUpperCase() === name.toUpperCase())
-    return res.status(200).json(nameProduct)
-  } else if (brand) {
-    const brandProduct = apiProducts.filter(products => products.brand.toUpperCase() === brand.toUpperCase())
-    return res.status(200).json(brandProduct)
-  } else if (category) {
-    const categoryProduct = apiProducts.filter(products => products.category.toUpperCase() === category.toUpperCase())
-    return res.status(200).json(categoryProduct)
-  } else {
-    return res.status(200).json(apiProducts)
+routerGet.get('/', async(req, res) => {
+  try {
+    console.log('petition resided...  ', req.url)
+    const { id, name, brand, category } = req.query
+    let query = 'SELECT * FROM cellPhones'
+    let params = []
+  
+    if (id) {
+      query = 'SELECT * FROM cellPhones WHERE id = ?';
+      params = [id]
+    } else if (name) {
+      query = 'SELECT * FROM cellPhones WHERE name = ?'
+      params = [name.toUpperCase()]
+    } else if (brand) {
+      query = 'SELECT * FROM cellPhones WHERE brand = ?'
+      params = [brand.toUpperCase()]
+    } else if (category) {
+      query = 'SELECT * FROM cellPhones WHERE category = ?'
+      params = [category.toUpperCase()]
+    }
+  
+    const [data] = await pool.query(query, params)
+    return res.status(200).json({data})
+
+  } catch (error) {
+    return res.status(500).json({ message: 'error del dato del cellPhone', error: error.message})
   }
 })
