@@ -1,0 +1,9 @@
+###
+PATCH http://localhost:3333/db?id=8
+Content-Type: application/json
+
+{
+  "name": "Xiaomi 12 pro",
+  "brand": "Android",
+  "category": "smartPhone"
+}
