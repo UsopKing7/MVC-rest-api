@@ -2,13 +2,13 @@
 GET http://localhost:3333/db
 
 ### para filter por Id
-GET http://localhost:3333/db?id=1
+GET http://localhost:3333/db?id=8
 
 ### para filter por name
-GET http://localhost:3333/db?name=samsung%20galaxy%20s23
+GET http://localhost:3333/db?name=Xiaomi%2012%20Lite
 
 ### para filter por brand
-GET http://localhost:3333/db?brand=samsung
+GET http://localhost:3333/db?brand=android
 
 ### para filter por category
-GET http://localhost:3333/db?category=smartfone
+GET http://localhost:3333/db?category=smartPhone
