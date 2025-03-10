@@ -26,9 +26,13 @@ routerGet.get('/', async(req, res) => {
     }
   
     const [data] = await pool.query(query, params)
+
+    if (!data.length) {
+      return res.status(404).json({ message: 'error 404 not font'})
+    }
     return res.status(200).json({data})
 
   } catch (error) {
-    return res.status(500).json({ message: 'error del dato del cellPhone', error: error.message})
+    return res.status(500).json({ message: 'error 500', error: error.message})
   }
 })
