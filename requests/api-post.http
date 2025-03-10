@@ -3,7 +3,7 @@ POST http://localhost:3333/db
 Content-Type: application/json
 
 {
-  "name": "Samsung A12",
+  "name": "Init 12 pro",
   "brand": "Android",
-  "category": "Smartfone"
+  "category": "Smartphone"
 }
