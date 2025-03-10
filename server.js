@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import express from 'express'
-import { routerControllers } from './src/controllers/routes.js'
+import { routerControllers } from './src/routes/routes.js'
 
 const app = express()
 app.use(express.json())
