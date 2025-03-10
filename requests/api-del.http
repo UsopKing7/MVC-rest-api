@@ -1,2 +1,2 @@
 ### para eliminar el cell Phones por id
-DELETE http://localhost:3333/db?id=7
+DELETE http://localhost:3333/db?id=1
