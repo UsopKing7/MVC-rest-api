@@ -13,7 +13,7 @@ app.use((req, res) => {
   return res.status(404).json({ message: "error 404 not font"})
 })
 
-const port = process.env.PORT ?? 3333
+const port = process.env.PORT ||3333
 app.listen(port, () => {
   console.log('server => http://localhost:3333')
 })
